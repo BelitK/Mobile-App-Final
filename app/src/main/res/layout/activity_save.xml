@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resim Ekleme Sayfası"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@android:color/background_dark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/midLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/midPicture"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher_foreground"/>
+        <TextView
+            android:id="@+id/midPicturePath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:maxLines="8"
+            android:text="URI.MediaStore.Images.ImageColumns.ImagePath"
+            android:textColor="@color/colorPrimaryDark"/>
+        <EditText
+            android:id="@+id/midPictureName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:hint="Resim için isim giriniz"
+            />
+        <EditText
+            android:id="@+id/midPictureComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:hint="Resim için eklenecek yorum"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bottomChooseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text=" Resmi Seç"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#8E9"/>
+        <Button
+            android:id="@+id/bottomSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Resmi Kaydet"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#8E9"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
